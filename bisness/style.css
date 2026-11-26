@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10%;
+    box-shadow: 0 0 20px rgba(0,0,0,0,1);
+    z-index: 100;
+}
+.menu_icons {
+    width:35px;
+    cursor: pointer;
+}
+.logo {
+    width: 60px;
+    margin-left: -10%;
+}
+button img {
+    width: 20px;
+    margin-left: 10px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu ul {
+    margin-left: 25px;
+    display: flex;
+    list-style: none;
+}
+.menu ul a {
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color:black;
+    text-decoration: 0;
+    position: relative;
+}
+.menu ul a::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color:#f7a800
+    transition 0.1s ease-out;
+}
+.menu ul a:hover::after {
+    width:100%;
+}
+.header-end{
+    display:flex;
+    align-items: center;
+}
+.header-end i {
+    margin-right: 20px;
+}
+button {
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 8px 15px;
+    background-color:#999;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 50px;
+    z-index: 1;
+    transition: 0.2s ease-out
+}
+button span {
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+button:hover {
+    transform: scale(0.88)
+}
+.fa-crown {
+    position: relative;
+    padding: 20px;
+}
+.login {
+    position: absolute;
+    right: -22px;
+    top: 60px;
+    width: 270px;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+.login button {
+    width: 100%;
+    background-color:#999;
+}
+hr {
+    border: 0;
+    margin: 30px 0;
+    background-color: #999;
+    width: 100%;
+    height: 1px;
+}
+.login p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.login button:last-child {
+    background-color: transparent;
+    color:#999;
+    border: 1px solid #999
+}
+
+.login::after {
+    position: absolute;
+    right: 40px;
+    top: -8px;
+    content: "";
+    height: 25px;
+    width: 25px;
+    z-index: -3;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    transform: rotate(50deg);
+}
+.login::before {
+    position: absolute;
+    right: 40px;
+    top: -8px;
+    content: "";
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    transform: rotate(50deg);
+
+}
+.fa-crown:hover .login {
+    display:block;
+}
+/* home */
+.home {
+    margin-top: 80px;
+    background: url(L4ARIERE.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+}
+/* Watchs */
+
+.Watchs {
+    margin: 50px 0;
+    padding:0 10%;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Anton' , sans-serif;
+}
+.watchs p {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.watchs-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.watchs-list .box {
+    flex: 1 1 300px;
+}
+.watchs-list img {
+    box-shadow: 0 0 9px rgba(0,0,0,1);
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.watchs-list .box {
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+.watchs-list .box:hover {
+    transform: scale(1.05);
+}
+
+/* fidelity prog */
+.fidelity_prog {
+    margin: 50px 0;
+    padding:0 10%;
+}
+.fidelity_prog  {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.fidelity_prog {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.fidelity_prog .div1 {
+    flex: 1 1 100px;
+}
+.fidelity_prog .div2 {
+    flex: 1 1 100px;
+}
+.fidelity_prog .div3 {
+    flex: 1 1 100px;
+}
+.fidelity_prog img {
+    box-shadow: 0 0 9px rgba(0,0,0,1);
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.fidelity_prog .div1 {
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+.fidelity_prog .div1:hover {
+    transform: scale(1.05);
+}
+.fidelity_prog .div2 {
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+.fidelity_prog .div2:hover {
+    transform: scale(1.05);
+}
+.fidelity_prog .div3 {
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+.fidelity_prog .div3:hover {
+    transform: scale(1.05);
+}
+/*fin*/
+.fin {
+    margin-top: 80px;
+    background: url(fin.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(150vh - 100px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+}
